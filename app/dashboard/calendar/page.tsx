@@ -150,7 +150,6 @@ export default function page() {
         }
     }, [])
 
-    // simpan ke local
     useEffect(() => {
         const stored = localStorage.getItem("events")
 
@@ -211,7 +210,6 @@ export default function page() {
         }
     }
 
-    // edit template
     // edit
     const [editTemplateEvent, setEditTemplateEvent] = useState<any>(null);
 
@@ -299,53 +297,6 @@ export default function page() {
             modalInstance?.hide();
         }
     }
-
-    // edit
-    // const [editEvent, setEditEvent] = useState<any>(null);
-
-    // const handleEditClick = (id: string) => {
-    //     const modalEl = document.getElementById("editModal");
-    //     const modalInstance = bootstrap.Modal.getInstance(modalEl!) || new bootstrap.Modal(modalEl!);
-    //     modalInstance.show();
-    //     const event = events.find(p => p.id === id);
-    //     if (event) {
-    //         setEditEvent(event);
-    //         setEventName(event.eventName);
-    //         setEventCategory(event.eventCategory);
-    //         setSelectedDate(event.start);
-    //         setSelectedEndDate(event.end);
-    //     }
-    // };
-
-    // function handleSaveEdit(e: React.FormEvent) {
-    //     e.preventDefault();
-    //     if (!editEvent) return;
-
-    //     const updatedEvent = {
-    //         ...editEvent,
-    //         eventName,
-    //         eventCategory,
-    //         start: selectedDate,
-    //         end: selectedEndDate,
-    //         updatedAt: new Date().toISOString()
-    //     };
-
-    //     const updateEvent = events.map(e => e.id === editEvent.id ? updatedEvent : e);
-    //     setEvents(updateEvent);
-    //     localStorage.setItem("events", JSON.stringify(updateEvent));
-
-    //     setEditEvent(null);
-    //     setEventName("");
-    //     setEventCategory("");
-    //     setSelectedDate("");
-    //     setSelectedEndDate("");
-
-    //     const modalEl = document.getElementById("editModal");
-    //     if (modalEl && typeof bootstrap !== "undefined") {
-    //         const modalInstance = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
-    //         modalInstance.hide();
-    //     }
-    // }
 
     // delete
     const handleDeleteEvent = (id: string) => {
@@ -436,7 +387,7 @@ export default function page() {
                         </div>
                     </div>
 
-                    {/* <!-- Modal Add Category --> */}
+                    {/* <!-- add --> */}
                     <div className="modal fade none-border" id="add-event">
                         <div className="modal-dialog">
                             <div className="modal-content">

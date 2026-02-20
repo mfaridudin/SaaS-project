@@ -135,10 +135,6 @@ export default function page() {
                                                 <label className="form-label">Name</label>
                                                 <input value={name} onChange={(e) => setName(e.target.value)} type="text" className="form-control" placeholder="Name" />
                                             </div>
-                                            {/* <div className="mb-3">
-                                                <label className="form-label">Slug</label>
-                                                <input type="text" className="form-control" placeholder="Slug"/>
-                                            </div> */}
                                             <div>
                                                 <button onClick={() => addCategory(name)} type="button" className="btn btn-primary">Save</button>
                                             </div>

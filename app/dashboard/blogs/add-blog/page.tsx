@@ -129,8 +129,6 @@ export default function Page() {
         reader.readAsDataURL(file)
     }
 
-    console.log("dari tag", author)
-
     async function addBlog() {
 
         if (!contents.title || !contents.content) {
@@ -156,8 +154,6 @@ export default function Page() {
             createdAt: new Date().toISOString(),
             updatedAt: new Date().toISOString()
         }
-
-        // console.log("ini Blog:", newBlog)
 
         const storedBlog = localStorage.getItem("blogs");
         const blogs = storedBlog ? JSON.parse(storedBlog) : [];
@@ -287,43 +283,19 @@ export default function Page() {
                                 {/* add title */}
                                 <AddTitleBlog contents={contents}
                                     setContents={setContents} />
+
                                 {/* excerpt */}
                                 <SetExcerpt excerpt={excerpt} setExcerpt={setExcerpt} />
-                                {/* <div className="filter cm-content-box box-primary">
-                                    <div className="content-title SlideToolHeader">
-                                        <div className="cpa">
-                                            Custom Fields
-                                        </div>
-                                        <div className="tools">
-                                            <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="cm-content-body form excerpt">
-                                        <div className="card-body">
-                                            <h6 className="font-w500 mb-3">Add New Custom Field:</h6>
-                                            <div className="row">
-                                                <div className="col-xl-6 col-sm-6">
-                                                    <div className="mb-3">
-                                                        <label className="form-label">Title</label>
-                                                        <input type="text" className="form-control" placeholder="Title" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-xl-6 col-sm-6">
-                                                    <label className="form-label">Value</label>
-                                                    <textarea className="form-control" rows={3}></textarea>
-                                                </div>
-                                            </div>
-                                            <button type="button" className="btn btn-primary btn-sm mt-3 mt-sm-0">Add Custom Field</button>
-                                            <span className="mt-3 d-block">Custom fields can be used to extra metadata to a post that you can use in your theme.</span>
-                                        </div>
-                                    </div>
-                                </div> */}
-                                {/* dis */}
+
+                                {/* discussion */}
                                 <SetDiscussion setDiscussion={setDiscussion} />
+
                                 {/* slug */}
                                 <AddSlug slug={slug} setSlug={setSlug} />
+
                                 {/* autor */}
                                 <SetAuthor author={author} setAuthor={setAuthor} />
+
                                 {/* addseo */}
                                 <AddSeo seo={seo} setSeo={setSeo} />
                             </div>
@@ -331,10 +303,14 @@ export default function Page() {
                                 <div className="right-sidebar-sticky">
                                     {/* published */}
                                     <AddPublished published={published} handleAddNewBlog={addBlog} setPublished={setPublished} />
+
                                     {/* add categories */}
                                     <AddCategories setCategory={setCategory} />
+
                                     {/* add tags */}
                                     <AddTags setTag={setTag} />
+
+                                    {/* addimage */}
                                     <AddImages image={image} setImage={setImage} handleImageChange={handleImageChange} />
                                 </div>
                             </div>

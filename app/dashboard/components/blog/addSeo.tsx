@@ -49,7 +49,6 @@ export default function AddSeo({
                 }))} className="form-control" placeholder="Enter meta Keywords" rows={3}></textarea>
               </div>
             </div>
-
           </div>
         </div>
       </div>

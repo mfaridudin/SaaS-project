@@ -62,9 +62,6 @@ export default function AddPublished({
                                             <button className="btn btn-primary btn-sm me-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                 Ok
                                             </button>
-                                            {/* <button className="btn btn-danger light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                Cancel
-                                            </button> */}
                                         </div>
                                     </div>
                                 </div>
@@ -121,9 +118,6 @@ export default function AddPublished({
                                             <button className="btn btn-primary btn-sm me-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
                                                 Ok
                                             </button>
-                                            {/* <button className="btn btn-danger light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
-                                                Cancel
-                                            </button> */}
                                         </div>
                                     </div>
                                 </div>
@@ -149,9 +143,6 @@ export default function AddPublished({
                                             <button className="btn btn-primary btn-sm me-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
                                                 Ok
                                             </button>
-                                            {/* <button className="btn btn-danger light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
-                                                Cancel
-                                            </button> */}
                                         </div>
                                     </div>
                                 </div>
