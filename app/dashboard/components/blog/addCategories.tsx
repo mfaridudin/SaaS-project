@@ -1,7 +1,6 @@
 "use client"
 import dummyCategory from "@/data/dummyBlogCategory.json"
-import { error } from "node:console"
-import { stringify } from "node:querystring"
+
 import { useEffect, useState } from "react"
 
 export default function AddCategories({ setCategory }: any) {

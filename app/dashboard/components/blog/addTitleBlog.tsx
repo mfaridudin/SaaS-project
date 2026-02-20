@@ -3,7 +3,6 @@
 import dynamic from "next/dynamic"
 import { useEffect, useState } from "react"
 
-// CKEditor component (aman)
 const CKEditor = dynamic(
     () => import("@ckeditor/ckeditor5-react").then(m => m.CKEditor),
     { ssr: false }

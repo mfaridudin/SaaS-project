@@ -12,6 +12,7 @@ import AddSlug from "../../components/blog/addSlug";
 import SetExcerpt from "../../components/blog/setExcerpt"
 import SetAuthor from "../../components/blog/setAuthor";
 import { useRouter } from "next/navigation";
+import AddImages from "../../components/blog/addImages";
 
 interface ContentType {
     title: string;
@@ -40,11 +41,12 @@ type BlogType = {
     author: string
     slug: string
     excerpt: string
-    visible: string
+    visibility: string
     publishedAt: string
     categories: string[]
     discussion: boolean
     tags: string[]
+    image: string
     createdAt: string
     updatedAt: string
 }
@@ -52,6 +54,7 @@ type BlogType = {
 
 export default function Page() {
     const router = useRouter()
+
     useEffect(() => {
         const $ = (window as any).jQuery;
 
@@ -111,6 +114,20 @@ export default function Page() {
     const [excerpt, setExcerpt] = useState("")
     // author
     const [author, setAuthor] = useState("")
+    // image
+    const [image, setImage] = useState<string>("")
+
+    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0]
+        if (!file) return
+
+        const reader = new FileReader()
+        reader.onloadend = () => {
+            const base64 = reader.result as string
+            setImage(base64)
+        }
+        reader.readAsDataURL(file)
+    }
 
     console.log("dari tag", author)
 
@@ -130,9 +147,10 @@ export default function Page() {
             slug,
             author,
             excerpt,
-            visible: published.visible,
+            visibility: published.visible,
             publishedAt: published.published,
             discussion,
+            image: image,
             categories: category,
             tags: tag,
             createdAt: new Date().toISOString(),
@@ -181,7 +199,7 @@ export default function Page() {
                         <div className="mb-4">
                             <ul className="d-flex align-items-center flex-wrap">
                                 <li><Link href="/dashboard/blogs" className="btn btn-primary btn-sm">Blog List</Link></li>
-                                <li><a href="blog-categories" className="btn btn-primary btn-sm mx-1">Blog Category</a></li>
+                                <li><Link href="blog-categories" className="btn btn-primary btn-sm mx-1">Blog Category</Link></li>
                                 <li><a href="javascript:void(0);" className="btn btn-primary btn-sm open mt-1 mt-md-0">Screen Option</a></li>
                             </ul>
                         </div>
@@ -317,32 +335,7 @@ export default function Page() {
                                     <AddCategories setCategory={setCategory} />
                                     {/* add tags */}
                                     <AddTags setTag={setTag} />
-                                    {/* <div className="filter cm-content-box box-primary">
-                                        <div className="content-title SlideToolHeader">
-                                            <div className="cpa">
-                                                Featured Image
-                                            </div>
-                                            <div className="tools">
-                                                <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
-                                            </div>
-                                        </div>
-                                        <div className="cm-content-body publish-content form excerpt">
-                                            <div className="card-body">
-                                                <div className="avatar-upload d-flex align-items-center">
-                                                    <div className=" position-relative ">
-                                                        <div className="avatar-preview">
-                                                            <div id="imagePreview" style={{ backgroundImage: "url(/dashboard/images/no-img-avatar.png)" }}>
-                                                            </div>
-                                                        </div>
-                                                        <div className="change-btn d-flex align-items-center flex-wrap">
-                                                            <input type='file' className="form-control d-none" id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                            <label htmlFor="imageUpload" className="btn btn-primary light btn-sm ms-0">Select Image</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
+                                    <AddImages image={image} setImage={setImage} handleImageChange={handleImageChange} />
                                 </div>
                             </div>
                         </div>

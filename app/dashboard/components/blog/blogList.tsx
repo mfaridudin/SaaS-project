@@ -2,6 +2,7 @@
 declare const bootstrap: any;
 import { useEffect, useState } from "react"
 import dummyDataBlogs from "@/data/dummyBlog.json"
+import Link from "next/link";
 
 export default function BlogList() {
     const [blogs, setBlogs] = useState<any[]>([])
@@ -75,7 +76,7 @@ export default function BlogList() {
                                             <td>{blog.status}</td>
                                             <td>
                                                 {(() => {
-                                                    const d = new Date(blog.createdAt)
+                                                    const d = new Date(blog.updatedAt)
 
                                                     const month = d.toLocaleString("en-US", { month: "short" })
                                                     const day = d.getDate()
@@ -85,9 +86,9 @@ export default function BlogList() {
                                                 })()}
                                             </td>
                                             <td className="text-nowrap">
-                                                <a href="javascript:void(0);" className="btn btn-warning btn-sm content-icon">
+                                                <Link href={`blogs/${blog.id}/detail`} className="btn btn-warning btn-sm content-icon">
                                                     <i className="fa-solid fa-pen-to-square"></i>
-                                                </a>
+                                                </Link>
                                                 <div onClick={() => setDeleteId(blog.id)} data-bs-toggle="modal" data-bs-target="#basicModal" className="btn btn-danger btn-sm content-icon">
                                                     <i className="fa-solid fa-trash"></i>
                                                 </div>
