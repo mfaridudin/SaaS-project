@@ -294,11 +294,11 @@ export default function page() {
                                 <div className="item">
                                     <div className="blog-post blog-grid text-center bg-white shadow wow fadeInUp" data-wow-delay="0.2s">
                                         <div className="dlab-post-media dlab-img-effect">
-                                            <a href="blog-details.html"><img src="/landingpage/images/blog/grid/pic1.jpg" alt="" /></a>
+                                            <a href="#"><img src="/landingpage/images/blog/grid/pic1.jpg" alt="" /></a>
                                         </div>
                                         <div className="dlab-info">
                                             <div className="dlab-post-title">
-                                                <h4 className="post-title"><a href="blog-details.html">Melting Snowman Doll – Crochet Pattern</a></h4>
+                                                <h4 className="post-title"><a href="#">Melting Snowman Doll – Crochet Pattern</a></h4>
                                             </div>
                                             <div className="dlab-post-text">
                                                 <p>pellentesque eu, pretium quis, sem. Nulla consequat massa qui enim.</p>
@@ -309,11 +309,11 @@ export default function page() {
                                 <div className="item">
                                     <div className="blog-post blog-grid text-center bg-white shadow wow fadeInUp" data-wow-delay="0.4s">
                                         <div className="dlab-post-media dlab-img-effect">
-                                            <a href="blog-details.html"><img src="/landingpage/images/blog/grid/pic1.jpg" alt="" /></a>
+                                            <a href="#"><img src="/landingpage/images/blog/grid/pic2.jpg" alt="" /></a>
                                         </div>
                                         <div className="dlab-info">
                                             <div className="dlab-post-title">
-                                                <h4 className="post-title"><a href="blog-details.html">Multiplying the Effectiveness of Your </a></h4>
+                                                <h4 className="post-title"><a href="#">Multiplying the Effectiveness of Your </a></h4>
                                             </div>
                                             <div className="dlab-post-text">
                                                 <p>pellentesque eu, pretium quis, sem. Nulla consequat massa qui enim.</p>
@@ -321,14 +321,29 @@ export default function page() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item">
+                                {/* <div className="item">
                                     <div className="blog-post blog-grid text-center bg-white shadow wow fadeInUp" data-wow-delay="0.6s">
                                         <div className="dlab-post-media dlab-img-effect">
-                                            <a href="blog-details.html"><img src="/landingpage/images/blog/grid/pic1.jpg" alt="" /></a>
+                                            <a href="#"><img src="/landingpage/images/blog/grid/pic2.jpg" alt="" /></a>
                                         </div>
                                         <div className="dlab-info">
                                             <div className="dlab-post-title">
-                                                <h4 className="post-title"><a href="blog-details.html">When is Medium Quality Content Just Right?</a></h4>
+                                                <h4 className="post-title"><a href="#">When is Medium Quality Content Just Right?</a></h4>
+                                            </div>
+                                            <div className="dlab-post-text">
+                                                <p>pellentesque eu, pretium quis, sem. Nulla consequat massa qui enim.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> */}
+                                <div className="item">
+                                    <div className="blog-post blog-grid text-center bg-white shadow wow fadeInUp" data-wow-delay="0.6s">
+                                        <div className="dlab-post-media dlab-img-effect">
+                                            <a href="#"><img src="/landingpage/images/blog/grid/pic3.jpg" alt="" /></a>
+                                        </div>
+                                        <div className="dlab-info">
+                                            <div className="dlab-post-title">
+                                                <h4 className="post-title"><a href="#">When is Medium Quality Content Just Right?</a></h4>
                                             </div>
                                             <div className="dlab-post-text">
                                                 <p>pellentesque eu, pretium quis, sem. Nulla consequat massa qui enim.</p>
