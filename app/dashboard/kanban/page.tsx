@@ -122,9 +122,9 @@ function SortableItem({
                 </div>
                 <div className="row justify-content-between align-items-center kanban-user">
                     <ul className="users col-6">
-                        <li><img src="images/contacts/pic11.jpg" alt="" /></li>
-                        <li><img src="images/contacts/pic22.jpg" alt="" /></li>
-                        <li><img src="images/contacts/pic33.jpg" alt="" /></li>
+                        <li><img src="/dashboard/images/avatar/1.png" alt="" /></li>
+                        <li><img src="/dashboard/images/avatar/5.png" alt="" /></li>
+                        <li><img src="/dashboard/images/avatar/3.png" alt="" /></li>
                     </ul>
                     <div className="col-6 d-flex justify-content-end">
                         <span className="fs-14"><i className="far fa-clock me-2"></i>Due {""}

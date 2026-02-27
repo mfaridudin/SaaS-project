@@ -15,6 +15,8 @@ export default function DashboardLayout({
 }) {
     const router = useRouter()
     useEffect(() => {
+        document.title = "SaaS Dashboard";
+
         const session = localStorage.getItem("session")
 
         if (!session) {

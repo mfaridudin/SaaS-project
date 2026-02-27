@@ -71,7 +71,7 @@ export default function Header() {
                                     <li><a href="#features"><span>Features</span></a></li>
                                     <li><a href="#testimonials"><span>Testimonials</span></a></li>
                                     <li><a href="#projects"><span>Projects</span></a></li>
-                                    <li><a href="#announcements"><span></span>Announcements</a></li>
+                                    <li><a href="#announcements"><span>Announcements</span></a></li>
                                 </ul>
                             </div>
                         </div>

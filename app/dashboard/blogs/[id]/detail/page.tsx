@@ -319,8 +319,8 @@ export default function Page() {
                         <div className="mb-4">
                             <ul className="d-flex align-items-center flex-wrap">
                                 <li><Link href="/dashboard/blogs" className="btn btn-primary btn-sm">Blog List</Link></li>
-                                <li><Link href="/dashboard/blogs/blog-categories" className="btn btn-primary btn-sm mx-1">Blog Category</Link></li>
-                                {/* <li><a href="" className="btn btn-primary btn-sm open mt-1 mt-md-0">Screen Option</a></li> */}
+                                <li><Link href="blog-categories" className="btn btn-primary btn-sm mx-1">Blog Category</Link></li>
+                                <li><a href="" className="btn btn-primary btn-sm open mt-1 mt-md-0">Screen Option</a></li>
                             </ul>
                         </div>
                         <div className="main-check" style={{ display: "none" }}>
@@ -462,7 +462,7 @@ export default function Page() {
                                             Discussion
                                         </div>
                                         <div className="tools">
-                                            <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                            {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -489,7 +489,7 @@ export default function Page() {
                                             Slug
                                         </div>
                                         <div className="tools">
-                                            <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                            {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -506,7 +506,7 @@ export default function Page() {
 
                                         </div>
                                         <div className="tools">
-                                            <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                            {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -529,7 +529,8 @@ export default function Page() {
                                         <div className="cpa">
                                             Seo
                                         </div>
-                                        <div className="tools"><a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                        <div className="tools">
+                                            {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -566,7 +567,7 @@ export default function Page() {
                                                 Published
                                             </div>
                                             <div className="tools">
-                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                             </div>
                                         </div>
                                         <div className="cm-content-body publish-content form excerpt">
@@ -708,7 +709,7 @@ export default function Page() {
                                                 Categories
                                             </div>
                                             <div className="tools">
-                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                             </div>
                                         </div>
                                         <div className="cm-content-body publish-content form excerpt">
@@ -759,7 +760,7 @@ export default function Page() {
                                                 Tag
                                             </div>
                                             <div className="tools">
-                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                             </div>
                                         </div>
 
@@ -788,7 +789,7 @@ export default function Page() {
                                                 Featured Image
                                             </div>
                                             <div className="tools">
-                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                {/* <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a> */}
                                             </div>
                                         </div>
                                         <div className="cm-content-body publish-content form excerpt">

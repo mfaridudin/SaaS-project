@@ -82,24 +82,29 @@ export default function SliderBanner() {
                                     <a href="portfolio-2.html" className="btn radius-lg btn-lg green btn-aware">VIEW WORK<span></span></a>
                                 </div>
                                 {/* <!-- LAYER NR. 6 --> */}
-                                <div className="tp-caption tp-resizeme rs-parallaxlevel-1"
+                                <div
+                                    className="tp-caption tp-resizeme rs-parallaxlevel-1"
                                     id="slide-100-layer-6"
-                                    data-x="['right','right','center','center']" data-hoffset="['-100',' 0','0','0']"
-                                    data-y="['bottom','bottom','bottom','bottom']" data-voffset="['100','100','100','0']"
-                                    data-width="none"
-                                    data-height="none"
-                                    data-whitespace="nowrap"
+                                    data-x="['right','right','center','center']"
+                                    data-hoffset="['-50','0','0','0']"
+                                    data-y="['bottom','bottom','bottom','bottom']"
+                                    data-voffset="['80','-50','-40','380']"
+                                    data-width="['850','620','500','400']"
+                                    data-height="['545','429','350','20']"
+                                    data-whitespace="normal"
                                     data-type="image"
                                     data-responsive_offset="on"
-                                    data-frames='[{"delay":250,"speed":5000,"frame":"0","from":"y:50px;rZ:5deg;opacity:0;fb:50px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-textalign="['inherit','inherit','inherit','inherit']"
-                                    data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[0,0,0,0]"
-                                    style={{ zIndex: 11 }}>
-                                    <div className="rs-looped rs-wave" data-speed="5" data-angle="0" data-radius="3px" data-origin="50% 50%">
-                                        <img src="/landingpage/images/main-slider/slide3.png" alt="" data-ww="['854px','620px','620px','400px']" data-hh="['545px','429px','429px','277px']" width="620" height="429" data-no-retina/>
+                                    data-frames='[
+                                        {"delay":250,"speed":800,"frame":"0","from":"opacity:0;y:50px;","to":"o:1;","ease":"Power3.easeOut"}
+                                    ]'
+                                    style={{ zIndex: 11 }}
+                                >
+                                    <div className="rs-looped rs-wave">
+                                        <img
+                                            src="/landingpage/images/main-slider/slide3.png"
+                                            alt="Gambar"
+                                            style={{ width: "100%", height: "auto", display: "block" }}
+                                        />
                                     </div>
                                 </div>
                             </li>

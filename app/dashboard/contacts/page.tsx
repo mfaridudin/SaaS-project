@@ -180,7 +180,7 @@ export default function page() {
                                         </div>
                                         <div className="card-body user-profile">
                                             <div className="image-bx">
-                                                <img src="images/pic1.jpg" data-src="images/contacts/Untitled-3.jpg" alt="" className="rounded-circle" />
+                                                <img src="/dashboard/images/avatar/5.png" data-src="images/contacts/-3.jpg" alt="" className="rounded-circle" />
                                                 <span className="active"></span>
                                             </div>
                                             <div className="media-body user-meta-info">

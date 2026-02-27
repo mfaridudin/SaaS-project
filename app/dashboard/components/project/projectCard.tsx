@@ -37,7 +37,7 @@ export default function ProjectCard({ project, onDeleteClick, handleEditClick, h
                         </div>
                         <div className="col-xl-2 col-md-4 col-sm-6 mt-md-0 mt-sm-3">
                             <div className="d-flex project-image">
-                                <img src="images/customers/11.jpg" alt="" />
+                                <img src="/dashboard/images/avatar/1.png" alt="" />
                                 <div>
                                     <p className="mb-0">Client</p>
                                     <h6 className="mb-0">{project.client}</h6>
@@ -46,7 +46,7 @@ export default function ProjectCard({ project, onDeleteClick, handleEditClick, h
                         </div>
                         <div className="col-xl-2 col-md-4 col-sm-6 text-lg-left mt-md-0 mt-3">
                             <div className="d-flex project-image">
-                                <img src="images/customers/22.jpg" alt="" />
+                                <img src="/dashboard/images/avatar/3.png" alt="" />
                                 <div>
                                     <p className="mb-0">Person in charge</p>
                                     <h6 className="mb-0">{project.personInCharge}</h6>

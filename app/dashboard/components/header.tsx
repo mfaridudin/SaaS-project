@@ -51,7 +51,7 @@ export default function Header() {
                                 </li>
                                 <li className="nav-item dropdown  header-profile">
                                     <a className="nav-link" href="" role="button" data-bs-toggle="dropdown">
-                                        <img src="/dashboard/images/user.jpg" width="56" alt="" />
+                                        <img src="/dashboard/images/avatar/contect-user.jpg" width="56" alt="" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-end">
                                         <Link href="profile" className="dropdown-item ai-icon">

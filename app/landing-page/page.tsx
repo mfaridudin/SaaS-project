@@ -1,9 +1,9 @@
 "use client"
 
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Footer from "@/app/landing-page/components/footer";
+import Header from "@/app/landing-page/components/header";
 
-import SliderBanner from "@/components/sliderBanner";
+import SliderBanner from "@/app/landing-page/components/sliderBanner";
 
 export default function page() {
 
@@ -213,7 +213,7 @@ export default function page() {
                     {/* <!-- testimonials end --> */}
                     {/* <!-- projects box --> */}
                     <div id='projects' className="section-full bg-white content-inner-1" style={{
-                        backgroundImage: "url('/landingpageimages/background/bg5.png')",
+                        backgroundImage: "url('/landingpage/images/background/bg5.png')",
                         backgroundPosition: "left center",
                         backgroundRepeat: "no-repeat",
                     }}>
@@ -321,21 +321,6 @@ export default function page() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className="item">
-                                    <div className="blog-post blog-grid text-center bg-white shadow wow fadeInUp" data-wow-delay="0.6s">
-                                        <div className="dlab-post-media dlab-img-effect">
-                                            <a href="#"><img src="/landingpage/images/blog/grid/pic2.jpg" alt="" /></a>
-                                        </div>
-                                        <div className="dlab-info">
-                                            <div className="dlab-post-title">
-                                                <h4 className="post-title"><a href="#">When is Medium Quality Content Just Right?</a></h4>
-                                            </div>
-                                            <div className="dlab-post-text">
-                                                <p>pellentesque eu, pretium quis, sem. Nulla consequat massa qui enim.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> */}
                                 <div className="item">
                                     <div className="blog-post blog-grid text-center bg-white shadow wow fadeInUp" data-wow-delay="0.6s">
                                         <div className="dlab-post-media dlab-img-effect">
