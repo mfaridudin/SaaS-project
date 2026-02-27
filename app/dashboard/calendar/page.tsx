@@ -189,6 +189,7 @@ export default function page() {
     async function handleAddTemplate(e: React.FormEvent) {
         e.preventDefault();
         const payload = {
+            ids: "TE-" + String(Date.now()).slice(-9),
             title,
             category,
             createdAt: new Date().toISOString(),
@@ -322,7 +323,7 @@ export default function page() {
                                         {templateEvents && templateEvents.length > 0 ? (
                                             templateEvents.map((event: any) => (
                                                 <div
-                                                    key={event.title}
+                                                    key={event.ids}
                                                     onDoubleClick={() =>
                                                         setActiveTitle(activeTitle === event.title ? null : event.title)
                                                     }

@@ -1,8 +1,11 @@
+"use client"
+import { useState } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 
 export default function page() {
+    const [activeTab, setActiveTab] = useState("monthly")
     return (
         <>
             {/* <!-- row --> */}
@@ -18,7 +21,7 @@ export default function page() {
                                                 <div className="col-xl-7 col-sm-7">
                                                     <h2 className="mb-0">Manage your project in one touch</h2>
                                                     <span>Let Fillow manage your project automatically with our best AI systems </span>
-                                                    <a href="javascript:void(0);" className="btn btn-rounded">Try Free Now</a>
+                                                    <a className="btn btn-rounded">Try Free Now</a>
                                                 </div>
                                                 <div className="col-xl-5 col-sm-5 ">
                                                     <img src="/dashboard/images/chart.png" alt="" className="sd-shape" />
@@ -32,15 +35,35 @@ export default function page() {
                                                 <h4 className="card-title">Project Statistics</h4>
                                                 <div className="d-flex align-items-center mt-3 project-tab">
                                                     <div className="card-tabs mt-sm-0 me-3">
-                                                        <ul className="nav nav-tabs" role="tablist">
+                                                        <ul className="nav nav-tabs">
                                                             <li className="nav-item">
-                                                                <a className="nav-link active" data-bs-toggle="tab" href="#monthly" role="tab">Monthly</a>
+                                                                <button
+                                                                    type="button"
+                                                                    className={`nav-link ${activeTab === "monthly" ? "active" : ""}`}
+                                                                    onClick={() => setActiveTab("monthly")}
+                                                                >
+                                                                    Monthly
+                                                                </button>
                                                             </li>
+
                                                             <li className="nav-item">
-                                                                <a className="nav-link" data-bs-toggle="tab" href="#weekly" role="tab">Weekly</a>
+                                                                <button
+                                                                    type="button"
+                                                                    className={`nav-link ${activeTab === "weekly" ? "active" : ""}`}
+                                                                    onClick={() => setActiveTab("weekly")}
+                                                                >
+                                                                    Weekly
+                                                                </button>
                                                             </li>
+
                                                             <li className="nav-item">
-                                                                <a className="nav-link" data-bs-toggle="tab" href="#today" role="tab">Today</a>
+                                                                <button
+                                                                    type="button"
+                                                                    className={`nav-link ${activeTab === "today" ? "active" : ""}`}
+                                                                    onClick={() => setActiveTab("today")}
+                                                                >
+                                                                    Today
+                                                                </button>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -53,8 +76,8 @@ export default function page() {
                                                             </svg>
                                                         </div>
                                                         <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                            <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                            <a className="dropdown-item" href="">Delete</a>
+                                                            <a className="dropdown-item" href="">Edit</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -133,8 +156,8 @@ export default function page() {
                                                         </svg>
                                                     </div>
                                                     <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                        <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                        <a className="dropdown-item" href="">Delete</a>
+                                                        <a className="dropdown-item" href="">Edit</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -151,7 +174,7 @@ export default function page() {
                                                     <p className="mb-0">Lorem ipsum dolor sit amet</p>
                                                 </div>
                                                 <div>
-                                                    <a href="javascript:void(0);" className="btn btn-outline-primary btn-rounded">View More</a>
+                                                    <a href=";" className="btn btn-outline-primary btn-rounded">View More</a>
                                                 </div>
                                             </div>
                                             <div className="card-body px-0 pt-2">
@@ -403,7 +426,7 @@ export default function page() {
 
                                                     </div>
                                                     <div className="card-footer border-0 pt-0">
-                                                        <a href="javascript:void(0);" className="btn btn-outline-primary btn-rounded d-block">Update Progress</a>
+                                                        <a href=";" className="btn btn-outline-primary btn-rounded d-block">Update Progress</a>
 
                                                     </div>
                                                 </div>
@@ -437,8 +460,8 @@ export default function page() {
                                                                         </svg>
                                                                     </div>
                                                                     <div className="dropdown-menu dropdown-menu-right">
-                                                                        <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                                        <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                                        <a className="dropdown-item" href="">Delete</a>
+                                                                        <a className="dropdown-item" href="">Edit</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -480,8 +503,8 @@ export default function page() {
                                                                         </svg>
                                                                     </div>
                                                                     <div className="dropdown-menu dropdown-menu-right">
-                                                                        <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                                        <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                                        <a className="dropdown-item" href="">Delete</a>
+                                                                        <a className="dropdown-item" href="">Edit</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -505,7 +528,7 @@ export default function page() {
                                                         <hr />
                                                     </div>
                                                     <div className="card-footer pt-0 border-0">
-                                                        <a href="javascript:void(0);" className="btn btn-outline-primary btn-rounded d-block">Pin other projects</a>
+                                                        <a href=";" className="btn btn-outline-primary btn-rounded d-block">Pin other projects</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -519,7 +542,7 @@ export default function page() {
                                                     <p className="mb-0">Lorem ipsum dolor sit amet</p>
                                                 </div>
                                                 <div>
-                                                    <a href="javascript:void(0);" className="btn btn-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#sendMessageModal" >+ New Messages</a>
+                                                    <a href=";" className="btn btn-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#sendMessageModal" >+ New Messages</a>
                                                 </div>
                                             </div>
                                             <div className="card-body px-0 pt-0">
@@ -546,8 +569,8 @@ export default function page() {
                                                             </svg>
                                                         </div>
                                                         <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                            <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                            <a className="dropdown-item" href="">Delete</a>
+                                                            <a className="dropdown-item" href="">Edit</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -573,8 +596,8 @@ export default function page() {
                                                             </svg>
                                                         </div>
                                                         <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                            <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                            <a className="dropdown-item" href="">Delete</a>
+                                                            <a className="dropdown-item" href="">Edit</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -600,8 +623,8 @@ export default function page() {
                                                             </svg>
                                                         </div>
                                                         <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                            <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                            <a className="dropdown-item" href="">Delete</a>
+                                                            <a className="dropdown-item" href="">Edit</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -627,8 +650,8 @@ export default function page() {
                                                             </svg>
                                                         </div>
                                                         <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                            <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                            <a className="dropdown-item" href="">Delete</a>
+                                                            <a className="dropdown-item" href="">Edit</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -654,8 +677,8 @@ export default function page() {
                                                             </svg>
                                                         </div>
                                                         <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item" href="javascript:void(0)">Delete</a>
-                                                            <a className="dropdown-item" href="javascript:void(0)">Edit</a>
+                                                            <a className="dropdown-item" href="">Delete</a>
+                                                            <a className="dropdown-item" href="">Edit</a>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -4,15 +4,33 @@ import { useEffect, useState } from "react"
 import dummyDataBlogs from "@/data/dummyBlog.json"
 import Link from "next/link";
 
-export default function BlogList() {
+interface Props {
+    filters: {
+        title: string;
+        status: string;
+        date: string;
+    };
+}
+
+export default function BlogList({ filters }: Props) {
     const [blogs, setBlogs] = useState<any[]>([])
     const [currentPage, setCurrentPage] = useState(1)
     const itemsPerPage = 5
 
-    const totalPages = Math.ceil(blogs.length / itemsPerPage)
+    const filteredBlogs = blogs.filter(blog => {
+        return (
+            (filters.title === "" || blog.title.toLowerCase().includes(filters.title.toLowerCase())) &&
+            (filters.status === "" || blog.status === filters.status) &&
+            (filters.date === "" || blog.date === filters.date)
+        );
+    });
+
+    const totalPages = Math.ceil(filteredBlogs.length / itemsPerPage)
+
     const start = (currentPage - 1) * itemsPerPage
     const end = start + itemsPerPage
-    const paginatedblogs = blogs.slice(start, end)
+
+    const paginatedblogs = filteredBlogs.slice(start, end)
 
     const maxVisiblePages = 5
     const half = Math.floor(maxVisiblePages / 2)
@@ -44,6 +62,7 @@ export default function BlogList() {
         setDeleteId(null);
     }
 
+
     return (
         <>
             <div className="filter cm-content-box box-primary">
@@ -52,7 +71,7 @@ export default function BlogList() {
                         <i className="fa-solid fa-file-lines me-1"></i>Blogs List
                     </div>
                     <div className="tools">
-                        <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                        <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                     </div>
                 </div>
                 <div className="cm-content-body form excerpt">
@@ -96,6 +115,11 @@ export default function BlogList() {
 
                                         </tr>
                                     ))}
+                                    {paginatedblogs.length === 0 && (
+                                        <tr>
+                                            <td colSpan={5} className="text-center">No Blogs Found</td>
+                                        </tr>
+                                    )}
                                 </tbody>
                             </table>
                             <div className="d-flex align-items-center justify-content-between flex-wrap">

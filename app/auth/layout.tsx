@@ -1,17 +1,28 @@
+"use client"
 import Script from "next/script"
 import type { Metadata } from "next"
+import { useEffect } from "react"
 
-export const metadata: Metadata = {
-    icons: {
-        icon: "/dashboard/images/favicon.png",
-    },
-}
+// export const metadata: Metadata = {
+//     icons: {
+//         icon: "/dashboard/images/favicon.png",
+//     },
+// }
 
 export default function AuthLayout({
     children,
 }: {
     children: React.ReactNode
 }) {
+     useEffect(() => {    
+            setTimeout(() => {
+                const preloader = document.getElementById("preloader")
+                const main = document.getElementById("main-wrapper")
+    
+                if (preloader) preloader.remove()
+                if (main) main.classList.add("show")
+            }, 800)
+        }, [])
     return (
         <>
             {/* CSS */}

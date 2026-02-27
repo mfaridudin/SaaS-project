@@ -43,14 +43,14 @@ export default function Header() {
                             </div>
                             <ul className="navbar-nav header-right">
                                 <li className="nav-item dropdown notification_dropdown">
-                                    <a className="nav-link bell dz-theme-mode" href="javascript:void(0);">
+                                    <a className="nav-link bell dz-theme-mode" href="">
                                         <i id="icon-light" className="fas fa-sun"></i>
                                         <i id="icon-dark" className="fas fa-moon"></i>
 
                                     </a>
                                 </li>
                                 <li className="nav-item dropdown  header-profile">
-                                    <a className="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                                    <a className="nav-link" href="" role="button" data-bs-toggle="dropdown">
                                         <img src="/dashboard/images/user.jpg" width="56" alt="" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-end">

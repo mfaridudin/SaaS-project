@@ -80,7 +80,7 @@ export default function AddTags({ setTag }: any) {
                     Tag
                 </div>
                 <div className="tools">
-                    <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                    <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                 </div>
             </div>
 

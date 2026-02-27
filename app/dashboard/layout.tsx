@@ -6,13 +6,21 @@ import Sidebar from "./components/sidebar"
 import Footer from "./components/footer"
 import { useEffect } from "react"
 import SidebarAutoClose from "./sidebarAutoClose"
+import { useRouter } from "next/navigation"
 
 export default function DashboardLayout({
     children,
 }: {
     children: React.ReactNode
 }) {
+    const router = useRouter()
     useEffect(() => {
+        const session = localStorage.getItem("session")
+
+        if (!session) {
+            router.push("/auth/login")
+        }
+
         setTimeout(() => {
             const preloader = document.getElementById("preloader")
             const main = document.getElementById("main-wrapper")

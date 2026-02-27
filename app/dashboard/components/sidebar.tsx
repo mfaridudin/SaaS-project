@@ -34,7 +34,7 @@ export default function Sidebar() {
                 </ul>
 
                 {/* PROFILE */}
-                <div className="side-bar-profile">
+                {/* <div className="side-bar-profile">
                     <div className="d-flex align-items-center justify-content-between mb-3">
                         <div className="side-bar-profile-img">
                             <img src="/dashboard/images/user.jpg" alt="User" />
@@ -67,15 +67,15 @@ export default function Sidebar() {
                             <span className="sr-only">45% Complete</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* COPYRIGHT */}
-                <div className="copyright">
+                {/* <div className="copyright">
                     <p>Fillow Saas Admin © 2023 All Rights Reserved</p>
                     <p className="fs-12">
                         Made with <span className="heart"></span> by DexignLab
                     </p>
-                </div>
+                </div> */}
 
             </div>
         </div>

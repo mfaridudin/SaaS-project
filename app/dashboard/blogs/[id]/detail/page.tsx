@@ -319,8 +319,8 @@ export default function Page() {
                         <div className="mb-4">
                             <ul className="d-flex align-items-center flex-wrap">
                                 <li><Link href="/dashboard/blogs" className="btn btn-primary btn-sm">Blog List</Link></li>
-                                <li><Link href="blog-categories" className="btn btn-primary btn-sm mx-1">Blog Category</Link></li>
-                                <li><a href="javascript:void(0);" className="btn btn-primary btn-sm open mt-1 mt-md-0">Screen Option</a></li>
+                                <li><Link href="/dashboard/blogs/blog-categories" className="btn btn-primary btn-sm mx-1">Blog Category</Link></li>
+                                {/* <li><a href="" className="btn btn-primary btn-sm open mt-1 mt-md-0">Screen Option</a></li> */}
                             </ul>
                         </div>
                         <div className="main-check" style={{ display: "none" }}>
@@ -434,7 +434,7 @@ export default function Page() {
                                             Excerpt
                                         </div>
                                         <div className="tools">
-                                            <a href="javascript:void(0);" className="expand handle">
+                                            <a href="" className="expand handle">
                                                 <i className="fal fa-angle-down"></i>
                                             </a>
                                         </div>
@@ -462,7 +462,7 @@ export default function Page() {
                                             Discussion
                                         </div>
                                         <div className="tools">
-                                            <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                            <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -489,7 +489,7 @@ export default function Page() {
                                             Slug
                                         </div>
                                         <div className="tools">
-                                            <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                            <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -506,7 +506,7 @@ export default function Page() {
 
                                         </div>
                                         <div className="tools">
-                                            <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                            <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -529,7 +529,7 @@ export default function Page() {
                                         <div className="cpa">
                                             Seo
                                         </div>
-                                        <div className="tools"><a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                        <div className="tools"><a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                         </div>
                                     </div>
                                     <div className="cm-content-body form excerpt">
@@ -566,7 +566,7 @@ export default function Page() {
                                                 Published
                                             </div>
                                             <div className="tools">
-                                                <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                             </div>
                                         </div>
                                         <div className="cm-content-body publish-content form excerpt">
@@ -579,7 +579,7 @@ export default function Page() {
                                                                 <span>{""} Status:</span>
                                                             </label>
                                                             <span className="font-w500">{published.status ? published.status : "no status"}</span>
-                                                            <a href="javascript:void(0);" className="badge badge-primary light ms-3" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne" aria-expanded="true" role="button">Edit</a>
+                                                            <a href="" className="badge badge-primary light ms-3" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne" aria-expanded="true" role="button">Edit</a>
                                                         </div>
                                                         <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion-one">
                                                             <div className=" border rounded p-3 mt-3">
@@ -614,7 +614,7 @@ export default function Page() {
                                                                 <span>{""} Visible:</span>
                                                             </label>
                                                             <span className="font-w500">{published.visible ? published.visible : "no visible"}</span>
-                                                            <a href="javascript:void(0);" className="badge badge-primary light ms-3" id="headingtwo" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-controls="collapsetwo" aria-expanded="true" role="button">Edit</a>
+                                                            <a href="" className="badge badge-primary light ms-3" id="headingtwo" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-controls="collapsetwo" aria-expanded="true" role="button">Edit</a>
                                                         </div>
                                                         <div id="collapsetwo" className="collapse" aria-labelledby="headingtwo" data-bs-parent="#accordion-one">
                                                             <div className="p-3 mt-3 border rounded">
@@ -673,7 +673,7 @@ export default function Page() {
                                                                 <span>{""} Published:</span>
                                                             </label>
                                                             <span className="font-w500">{published.published ? `on: ${published.published}` : "no published"}</span> {/* 24-09-2023 16:22:52 */}
-                                                            <a href="javascript:void(0);" className="badge badge-primary light ms-3" id="headingthree" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-controls="collapsethree" aria-expanded="true" role="button">Edit</a>
+                                                            <a href="" className="badge badge-primary light ms-3" id="headingthree" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-controls="collapsethree" aria-expanded="true" role="button">Edit</a>
                                                         </div>
                                                         <div id="collapsethree" className="collapse" aria-labelledby="headingthree" data-bs-parent="#accordion-one">
                                                             <div className="p-3 mt-3 border rounded">
@@ -708,7 +708,7 @@ export default function Page() {
                                                 Categories
                                             </div>
                                             <div className="tools">
-                                                <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                             </div>
                                         </div>
                                         <div className="cm-content-body publish-content form excerpt">
@@ -759,7 +759,7 @@ export default function Page() {
                                                 Tag
                                             </div>
                                             <div className="tools">
-                                                <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                             </div>
                                         </div>
 
@@ -788,7 +788,7 @@ export default function Page() {
                                                 Featured Image
                                             </div>
                                             <div className="tools">
-                                                <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                                                <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                                             </div>
                                         </div>
                                         <div className="cm-content-body publish-content form excerpt">

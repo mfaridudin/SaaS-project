@@ -143,7 +143,7 @@ export default function page() {
                             }}
                         />
 
-                        <span className="input-group-text"><a href="javascript:void(0)"><i className="flaticon-381-search-2"></i></a></span>
+                        <span className="input-group-text"><a href=""><i className="flaticon-381-search-2"></i></a></span>
                     </div>
                     <div className="mb-4">
 
@@ -187,9 +187,9 @@ export default function page() {
                                                 <h5 className="mb-0"><a href="app-profile.html" className="text-black user-name" data-name={contact.name}>{contact.name}</a></h5>
                                                 <p className=" mb-3" data-occupation={contact.occupation}>{contact.company}</p>
                                                 <ul>
-                                                    <li><Link href="javascript:void(0);"><i className="fas fa-phone-alt"></i></Link></li>
-                                                    <li><Link href="javascript:void(0);"><i className="far fa-comment-alt"></i></Link></li>
-                                                    <li><Link href="javascript:void(0);"><i className="fas fa-video"></i></Link></li>
+                                                    <li><Link href=";"><i className="fas fa-phone-alt"></i></Link></li>
+                                                    <li><Link href=";"><i className="far fa-comment-alt"></i></Link></li>
+                                                    <li><Link href=";"><i className="fas fa-video"></i></Link></li>
                                                 </ul>
                                             </div>
                                         </div>

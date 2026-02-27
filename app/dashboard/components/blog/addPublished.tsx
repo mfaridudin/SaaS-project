@@ -28,7 +28,7 @@ export default function AddPublished({
                         Published
                     </div>
                     <div className="tools">
-                        <a href="javascript:void(0);" className="expand handle"><i className="fal fa-angle-down"></i></a>
+                        <a href="" className="expand handle"><i className="fal fa-angle-down"></i></a>
                     </div>
                 </div>
                 <div className="cm-content-body publish-content form excerpt">
@@ -41,7 +41,7 @@ export default function AddPublished({
                                         <span>{""} Status:</span>
                                     </label>
                                     <span className="font-w500">{published.status ? published.status : "no status"}</span>
-                                    <a href="javascript:void(0);" className="badge badge-primary light ms-3" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne" aria-expanded="true" role="button">Edit</a>
+                                    <a href="" className="badge badge-primary light ms-3" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne" aria-expanded="true" role="button">Edit</a>
                                 </div>
                                 <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion-one">
                                     <div className=" border rounded p-3 mt-3">
@@ -73,7 +73,7 @@ export default function AddPublished({
                                         <span>{""} Visible:</span>
                                     </label>
                                     <span className="font-w500">{published.visible ? published.visible : "no visible"}</span>
-                                    <a href="javascript:void(0);" className="badge badge-primary light ms-3" id="headingtwo" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-controls="collapsetwo" aria-expanded="true" role="button">Edit</a>
+                                    <a href="" className="badge badge-primary light ms-3" id="headingtwo" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-controls="collapsetwo" aria-expanded="true" role="button">Edit</a>
                                 </div>
                                 <div id="collapsetwo" className="collapse" aria-labelledby="headingtwo" data-bs-parent="#accordion-one">
                                     <div className="p-3 mt-3 border rounded">
@@ -129,7 +129,7 @@ export default function AddPublished({
                                         <span>{""} Published:</span>
                                     </label>
                                     <span className="font-w500">{published.published ? `on: ${published.published}` : "no published"}</span> {/* 24-09-2023 16:22:52 */}
-                                    <a href="javascript:void(0);" className="badge badge-primary light ms-3" id="headingthree" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-controls="collapsethree" aria-expanded="true" role="button">Edit</a>
+                                    <a href="" className="badge badge-primary light ms-3" id="headingthree" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-controls="collapsethree" aria-expanded="true" role="button">Edit</a>
                                 </div>
                                 <div id="collapsethree" className="collapse" aria-labelledby="headingthree" data-bs-parent="#accordion-one">
                                     <div className="p-3 mt-3 border rounded">

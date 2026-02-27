@@ -14,7 +14,7 @@ export default function SetExcerpt({ excerpt, setExcerpt }: Props) {
                         Excerpt
                     </div>
                     <div className="tools">
-                        <a href="javascript:void(0);" className="expand handle">
+                        <a href="" className="expand handle">
                             <i className="fal fa-angle-down"></i>
                         </a>
                     </div>

@@ -196,7 +196,7 @@ export default function Page() {
                             <ul className="d-flex align-items-center flex-wrap">
                                 <li><Link href="/dashboard/blogs" className="btn btn-primary btn-sm">Blog List</Link></li>
                                 <li><Link href="blog-categories" className="btn btn-primary btn-sm mx-1">Blog Category</Link></li>
-                                <li><a href="javascript:void(0);" className="btn btn-primary btn-sm open mt-1 mt-md-0">Screen Option</a></li>
+                                {/* <li><a href="" className="btn btn-primary btn-sm open mt-1 mt-md-0">Screen Option</a></li> */}
                             </ul>
                         </div>
                         <div className="main-check" style={{ display: "none" }}>
