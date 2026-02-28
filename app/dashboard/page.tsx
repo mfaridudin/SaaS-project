@@ -1,8 +1,5 @@
 "use client"
 import { useState } from "react";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Sidebar from "./components/sidebar";
 
 export default function page() {
     const [activeTab, setActiveTab] = useState("monthly")

@@ -10,7 +10,7 @@ export default function Footer() {
                             <div className="col-xl-3 col-lg-3 col-md-12 col-sm-6">
                                 <div className="widget widget_ftabout">
                                     <div className="footer-logo">
-                                        <a href="index.html"><img src="/landingpage/images/logo-3.png" alt=""/></a>
+                                        <a href="index.html"><img src="/dashboard/images/lightlogo.png" alt=""/></a>
                                     </div>
                                     <p className="loaction-text"><i className="fa fa-paper-plane"></i>Dhaka, Barisal</p>
                                 </div>

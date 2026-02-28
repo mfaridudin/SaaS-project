@@ -19,6 +19,7 @@ export default function Header() {
     const signup = () => {
         window.location.href = "/auth/register"
     }
+    
     return (
         <div>
             <header className="site-header header-transparent header mo-left">
@@ -28,7 +29,7 @@ export default function Header() {
                         <div className="container clearfix">
                             {/* <!-- website logo --> */}
                             <div className="logo-header mostion">
-                                <span className="dez-page"><img src="/landingpage/images/logo-2.png" alt="" /></span>
+                                <span className="dez-page"><img src="/dashboard/images/logo.png" alt="" /></span>
                             </div>
                             {/* <!-- nav toggle button --> */}
                             <button className="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
