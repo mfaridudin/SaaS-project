@@ -15,7 +15,7 @@ export default function DashboardLayout({
 }) {
     const router = useRouter()
     useEffect(() => {
-        document.title = "SaaS Dashboard";
+        document.title = "Calenly - SaaS Dashboard";
 
         const session = localStorage.getItem("session")
 
