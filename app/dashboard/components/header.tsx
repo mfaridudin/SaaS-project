@@ -1,8 +1,18 @@
 "use client"
-
+declare const bootstrap: any;
 import Link from "next/link"
 
 export default function Header() {
+
+    const logout = () => {
+        const modalEl = document.getElementById("basicModal");
+        const modalInstance = bootstrap.Modal.getInstance(modalEl!) || new bootstrap.Modal(modalEl!);
+        modalInstance.hide();
+
+        localStorage.removeItem("session")
+        window.location.href = "auth/login"
+    }
+
     return (
         <>
             <div className="nav-header">
@@ -58,10 +68,10 @@ export default function Header() {
                                             <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" className="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                             <span className="ms-2">Profile </span>
                                         </Link>
-                                        <a href="page-login.html" className="dropdown-item ai-icon">
+                                        <span data-bs-toggle="modal" data-bs-target="#basicModal" className="dropdown-item ai-icon">
                                             <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" className="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
                                             <span className="ms-2">Logout </span>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                             </ul>
@@ -69,6 +79,27 @@ export default function Header() {
                     </nav>
                 </div>
             </div>
+            <div className="modal fade" id="basicModal" tabIndex={-1} aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title">Logout</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div className="modal-body">Are you sure you want to logout?</div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button
+                                type="button"
+                                className="btn btn-danger"
+                                onClick={logout}
+                            >
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>I
         </>
     )
 }

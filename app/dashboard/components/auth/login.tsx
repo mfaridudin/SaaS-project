@@ -57,7 +57,7 @@ export default function LoginPage() {
                             <div className="card mb-0 h-auto">
                                 <div className="card-body">
                                     <div className="text-center mb-3">
-                                        <Link href="/dashboard"><img className="logo-auth" src="/dashboard/images/logo-full.png" alt="" /></Link>
+                                        <Link href="/dashboard"><img className="logo-auth" src="/dashboard/images/lightlogo.png" alt="" /></Link>
                                     </div>
                                     <h4 className="text-center mb-4">Sign in your account</h4>
                                     <form onSubmit={handleLogin}>
