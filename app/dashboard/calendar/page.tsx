@@ -323,7 +323,7 @@ export default function page() {
                                         {templateEvents && templateEvents.length > 0 ? (
                                             templateEvents.map((event: any) => (
                                                 <div
-                                                    key={event.ids}
+                                                    key={`${event.ids}-${event.title}`}
                                                     onDoubleClick={() =>
                                                         setActiveTitle(activeTitle === event.title ? null : event.title)
                                                     }
