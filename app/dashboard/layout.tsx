@@ -15,7 +15,7 @@ export default function DashboardLayout({
 }) {
     const router = useRouter()
     useEffect(() => {
-        document.title = "Calenly - SaaS Dashboard";
+        document.title = "Meetova - SaaS Dashboard";
 
         const session = localStorage.getItem("session")
 

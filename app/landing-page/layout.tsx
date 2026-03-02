@@ -1,5 +1,9 @@
-import Script from "next/script";
 import RevSliderScripts from "./components/RevSliderScripts";
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Landing Page - Meetova', description: 'Landing page meetova',
+}
 
 export default function LandingLayout({
   children,
@@ -16,19 +20,6 @@ export default function LandingLayout({
 
       {children}
       <RevSliderScripts />
-      {/* JAVASCRIPT FILES ========================================= */}
-
-{/*      
-      <Script id="rev-slider-init" strategy="afterInteractive">
-        {`
-          jQuery(document).ready(function() {
-            'use strict';
-            if (typeof dz_rev_slider_1 !== 'undefined') {
-              dz_rev_slider_1();
-            }
-          });
-        `}
-      </Script> */}
     </>
   )
 }
