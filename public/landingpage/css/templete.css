@@ -137,11 +137,11 @@ ul{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e64fe', endColorstr='#f47891',GradientType=1 ); /* IE6-9 */
 }
 .gradient-six{
-	background: rgb(184,98,245); /* Old browsers */
-	background: -moz-linear-gradient(left,  rgba(184,98,245,1) 1%, rgba(153,97,253,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  rgba(184,98,245,1) 1%,rgba(153,97,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  rgba(184,98,245,1) 1%,rgba(153,97,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e64fe', endColorstr='#f47891',GradientType=1 ); /* IE6-9 */
+  background: rgb(255,158,66);
+  background: linear-gradient(to right,
+    rgba(255,158,66,1) 1%,
+    rgba(255,122,26,1) 100%
+  );
 }
 
 /* featured box style 1 */
@@ -417,7 +417,7 @@ ul{
 	bottom:30px;
 }
 .dlab-img-overlay1.primary:before{
-	background-color: #7450fe;
+	background-color: #FEA650;
 }
 .team-box.style2 .team-title {
 	margin-bottom: 0;
@@ -479,7 +479,7 @@ ul{
 }
 .owl-btn-2 .owl-prev:hover, 
 .owl-btn-2 .owl-next:hover {
-	border-color:#7450fe;
+	border-color:#FEA650;
 }
 /* pricing table */
 .pricingtable-wrapper .pricingtable-price {
@@ -965,7 +965,7 @@ footer .widget_services ul li:hover {
 .project-box1 .icon-bx {
     height: 60px;
     width: 60px;
-    background-color: #7450fe;
+    background-color: #FEA650;
     display: block;
     border-radius: 50px;
     font-size: 24px;
@@ -1147,7 +1147,7 @@ footer .widget_services ul li:hover {
     height: 340px;
     width: 340px;
     border-radius: 100%;
-    background-color: #7450fe;
+    background-color: #FEA650;
     margin: auto;
     display: flex;
     align-items: center;
@@ -1287,7 +1287,7 @@ footer .widget_services ul li:hover {
 	color: #adadad;
 }
 .blog-post .social-share li:hover a{
-	color: #7450fe;
+	color: #FEA650;
 }
 .blog-post .social-share p{
 	font-size: 18px;
@@ -1560,7 +1560,7 @@ footer .widget_services ul li:hover {
 }
 .contact-box.style1 form .form-control:focus,
 .contact-box.style1 form .form-control:hover{
-	border-color: #7450fe;
+	border-color: #FEA650;
 }
 /* side-bar */
 .side-bar {
@@ -1703,7 +1703,7 @@ footer .widget_services ul li:hover {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background-color: #8d72f9;
+    background-color: #F9A572;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

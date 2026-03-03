@@ -2,11 +2,11 @@
 	Premery bg color 
 =====================*/
 :root{
-	--bg-color: #7450fe;
-	--bg-color-sc: #3d56f0;
-	--text-color-sc: #3d56f0;
-	--bg-color-ho: #3d56f0;
-	--text-color: #7450fe;
+	--bg-color: #FEA650;
+	--bg-color-sc: yellow;
+	--text-color-sc: yellow;
+	--bg-color-ho: yellow;
+	--text-color: #FEA650;
 }
 
 /* Hex */
@@ -80,7 +80,7 @@
 .lg-actions .lg-prev, 
 .lg-sub-html, 
 .lg-toolbar{
-    background-color: #7450fe;
+    background-color: #FEA650;
 }
 /*Hex color :hover */
 .btn:active,
@@ -108,16 +108,16 @@
 .overlay-primary-middle:after, 
 .overlay-primary-dark:after,
 .overlay-primary:after{
-    background-color: #8869ff;
+    background-color: #FFB869;
 }
 .about-us .dlab-tabs .nav-tabs li a.active{
 	border-right: 4px solid #3d56f0;
 }
 .btn.outline:hover{
-	border-color: #8869ff;
+	border-color: #FFB869;
 }
 .btn-aware:hover span {
-	background:#8869ff;
+	background:#FFB869;
 }
 /* Rgba color */
 .dlab-info-has.bg-primary,
@@ -185,7 +185,7 @@ h6 a:hover,
 .btn.white,
 .lg-outer .lg-toogle-thumb,
 .lg-outer .lg-toogle-thumb:hover{
-    color: #7450fe;
+    color: #FEA650;
 }
 
 @media only screen and (max-width: 991px) {
@@ -231,7 +231,7 @@ input[type="radio"] + label:hover:before,
 }
 .lg-outer .lg-thumb-item.active, 
 .lg-outer .lg-thumb-item:hover{
-	border-color: #7450fe;
+	border-color: #FEA650;
 }
 
 /*===================== 

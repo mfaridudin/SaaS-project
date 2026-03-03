@@ -19,7 +19,7 @@ export default function Header() {
     const signup = () => {
         window.location.href = "/auth/register"
     }
-    
+
     return (
         <div>
             <header className="site-header header-transparent header mo-left">
@@ -29,8 +29,10 @@ export default function Header() {
                         <div className="container clearfix">
                             {/* <!-- website logo --> */}
                             <div className="logo-header mostion">
-                                <span className="dez-page"><img src="/dashboard/images/logo.png" alt="" /></span>
+                                <span className="dez-page logo"><img src="/dashboard/images/logo.png" alt="" /></span>
+                                <span className="dez-page logo-sticky"><img src="/dashboard/images/logo-sticky.png" alt="" /></span>
                             </div>
+
                             {/* <!-- nav toggle button --> */}
                             <button className="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span></span>
@@ -60,9 +62,10 @@ export default function Header() {
                                 </form>
                             </div>
                             {/* <!-- main nav --> */}
-                            <div className="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                            <div className="header-nav navbar-collapse collapse justify-content-end">
                                 <div className="logo-header mostion">
-                                    <span className="dez-page"><img src="/landingpage/images/logo.png" alt="" /></span>
+                                    <span className="dez-page logo"><img src="/dashboard/images/logo.png" alt="" /></span>
+                                    <span className="dez-page logo-sticky"><img src="/dashboard/images/logo-sticky.png" alt="" /></span>
                                 </div>
                                 <ul className="nav navbar-nav">
                                     <li><a href="#"><span>Home</span></a></li>
