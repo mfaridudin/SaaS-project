@@ -307,7 +307,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #F39C12;
-  --bs-secondary: #FFA7D7;  
+  --bs-secondary: #FFA7D7;
   --bs-success: #09BD3C;
   --bs-info: #D653C1;
   --bs-warning: #FFBF00;
@@ -4078,6 +4078,31 @@ fieldset:disabled .btn {
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.76563rem;
   --bs-btn-border-radius: var(--bs-border-radius-sm);
+}
+
+.btn-close-custom {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #d9d9d9;
+  --bs-btn-border-color: #d9d9d9;
+
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #cfcfcf;
+  --bs-btn-hover-border-color: #cfcfcf;
+
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #c5c5c5;
+  --bs-btn-active-border-color: #c5c5c5;
+}
+
+.btn-close-custom:hover {
+  color: #000;
+  background-color: #bfbfbf;
+  border-color: #bfbfbf;
+}
+
+.btn-close-custom:active {
+  background-color: #c5c5c5;
+  border-color: #c5c5c5;
 }
 
 @media (min-width: 1200px) {
